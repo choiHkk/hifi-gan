@@ -20,7 +20,7 @@
 
 ## Docker build
 1. `cd /path/to/the/hifi-gan`
-2. `docker build --tag hifi-gan:latest .`
+2. `docker build --tag hifigan:latest .`
 
 ## Training
 1. `nvidia-docker run -it -n 'hifigan' -v /path/to/the/hifi-gan:/home/work/tacotron2 --ipc=host --privileged hifigan:latest`
