@@ -1,0 +1,27 @@
+# torch==1.4.0
+# numpy==1.17.4
+# librosa==0.7.2
+# scipy==1.4.1
+# tensorboard==2.0
+# soundfile==0.10.3.post1
+# matplotlib==3.1.3
+
+tensorboardX
+librosa
+matplotlib
+numpy
+scipy
+tqdm
+Unidecode
+inflect
+jamo
+pandas
+jpype1
+konlpy
+jamotools
+tweepy==3.10.0
+nltk
+pillow
+natsort
+easydict
+g2pk
