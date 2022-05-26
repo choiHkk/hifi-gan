@@ -1,6 +1,6 @@
 ## Introduction
 1. hifi-gan 오픈 소스와 한국어 데이터셋(KSS)을 사용해 빠르게 학습하고, 사전 학습된 tacotron2와 end to end inference를 수행합니다. 
-2. KSS 데이터셋은 기본적으로 44kHz인 점을 감안하여 22kHz로 resampling할 수 있도록 utils.load_wav_to_torch()를 수정했습니다.
+2. KSS 데이터셋은 기본적으로 44kHz인 점을 감안하여 22kHz로 resampling할 수 있도록 meldataset.load_wav()를 수정했습니다.
 4. 기존의 nvidia-tacotron2 stft를 사용하면 변환되는 mel-spectrogram의 범위가 약 2 ~ -11 사이로 변환되어 학습하는데 많은 시간이 소요되기 때문에 torch version stft는 사용하지 않습니다.
 5. mel-spectrogram 생성 과정이 변경되었기 때문에 mel-spectrogram reconstructure l1 loss를 사용하지 않고 stft loss를 대신하여 사용합니다.
 6. mel-spectrogram 생성 과정이 변경되었기 때문에 tacotron2에서 사용한 audio_processing.py 스크립트의 추가 및 meldataset.py, train.py가 수정되었습니다.
