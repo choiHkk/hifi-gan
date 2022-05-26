@@ -13,10 +13,11 @@
 
 ## Dataset
 1. download dataset - https://www.kaggle.com/datasets/bryanpark/korean-single-speaker-speech-dataset
-2. `mkdir /path/to/the/hifi-gan/data/dataset`
-3. `mv /path/to/the/kss.zip /path/to/the/hifi-gan/data/dataset`
-4. `cd /path/to/the/hifi-gan/data/dataset`
-5. `unzip kss.zip -d kss`
+2. `mkdir /path/to/the/hifi-gan/data`
+3. `mkdir /path/to/the/hifi-gan/data/dataset`
+4. `mv /path/to/the/kss.zip /path/to/the/hifi-gan/data/dataset`
+5. `cd /path/to/the/hifi-gan/data/dataset`
+6. `unzip kss.zip -d kss`
 
 ## Docker build
 1. `cd /path/to/the/hifi-gan`
