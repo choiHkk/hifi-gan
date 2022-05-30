@@ -24,7 +24,7 @@
 2. `docker build --tag hifigan:latest .`
 
 ## Training
-1. `nvidia-docker run -it -n 'hifigan' -v /path/to/the/hifi-gan:/home/work/tacotron2 --ipc=host --privileged hifigan:latest`
+1. `nvidia-docker run -it --name 'hifigan' -v /path/to/the/hifi-gan:/home/work/tacotron2 --ipc=host --privileged hifigan:latest`
 2. `cd /home/work/hifi-gan`
 3. `python train.py --config=config_v1.json`
 4. `python train.py --config=config_v1.json --checkpoint_path=/path/to/the/hifi-gan/cp_hifigan`
